@@ -78,7 +78,9 @@ body {
                     display: inline;
                     margin: 0 10px;
                 }
-
+            .fa-bars {
+              display: none;
+            }
             .nav-items {
               text-align: right;
             }
@@ -121,7 +123,8 @@ body {
       .flex-container {
         display: flex;
         align-items: center;
-        margin: 40px 0;
+        margin: 40px 60px;
+        height: 500px;
       }
 
           .left-flex {
@@ -136,3 +139,28 @@ body {
             /*display: flex;
             flex-direction: row;*/
           }
+
+@media screen and (max-width: 1970px) {
+
+  .container {
+    background: var(--hot-pink);
+    position: relative;
+    right: 165px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .container {
+    background: var(--medium-pink);
+    position: relative;
+    /*width: 360px;*/
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .fa-bars {
+    display: flex;
+  }
+}
