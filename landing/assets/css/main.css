@@ -1,0 +1,138 @@
+/* POPPI SHOP LANDING PAGE*/
+
+/* Import Google Fonts - Roboto, Reem Kufi, Indie Flower and Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Comfortaa:wght@300;400;500;600&display=swap');
+
+/* Import Font Awesome for Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* Import Animate.css library */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css");
+
+
+:root {
+  /* Colors */
+  --light-pink: #fde1eb;
+  --hot-pink: #ff699f;
+  --medium-pink: #ffa1c3;
+  --black-color: #242424;
+  --white-color: #ffffff;
+
+  /* Fonts */
+  --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'Comfortaa', sans-serif;
+
+  /* Font Sizes */
+    --base-font-size: 100%;
+  /*  --fluid-typography-ratio: 0.5;
+    --rem: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1vw);
+    font-size: var(--rem); */
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
+}
+
+body {
+    position: absolute;
+    top: 9%;
+    left: 25%;
+    background: 12px var(--light-pink);
+    color: var(--black-color);
+    font-family: var(--primary-font);
+}
+
+    .logo {
+        width: 250px;
+    }
+
+    .container {
+        background: var(--white-color);
+        max-width: 1300px;
+        text-align: center;
+        border-radius: 55px;
+    }
+
+    .content {
+        display: block;
+        padding: 20px 80px 80px;
+    }
+
+        .header {
+            display: none;
+        }
+
+            .main-nav {
+                display: flex;
+                align-items: center;
+                font-family: var(--secondary-font);
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+                .main-nav li {
+                    display: inline;
+                    margin: 0 10px;
+                }
+
+            .nav-items {
+              text-align: right;
+            }
+                .nav-items a {
+                  color: var(--black-color);
+                  font-weight: 500;
+                  padding: 10px 25px;
+                  transition: 0.3s;
+                  border-radius: 30px;
+                }
+                      .nav-items a:hover {
+                        background-color: var(--black-color);
+                        color: var(--white-color);
+                        border-radius: 30px;
+                      }
+                      .nav-items a:active {
+                        background-color: var(--black-color);
+                        color: var(--white-color);
+                        border-radius: 30px;
+                      }
+
+
+                .nav-items ul {
+                  display: inline-block;
+                }
+
+                .nav-items ul li a {
+                  font-weight: 600;
+                }
+
+                .nav-items:last-child>ul>li:last-child > a:hover {
+                    background-color: transparent!important;
+                }
+
+                      .heart-logo img {
+                        max-width: 2.9%;
+                        position: relative;
+                        top: 3px;
+                      }
+      .flex-container {
+        display: flex;
+        align-items: center;
+        margin: 40px 0;
+      }
+
+          .left-flex {
+            /*display: flex;
+            flex-direction: row;*/
+          }
+              .left-flex img {
+                width: 100%;
+              }
+
+          .right-flex {
+            /*display: flex;
+            flex-direction: row;*/
+          }
