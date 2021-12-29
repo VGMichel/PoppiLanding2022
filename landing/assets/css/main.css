@@ -81,7 +81,7 @@ body {
                     display: inline;
                     margin: 0 10px;
                 }
-            .fa-bars {
+            .fa, .fa-bars {
               display: none;
             }
             .nav-items {
@@ -202,7 +202,7 @@ body {
     display: none;
   }
 
-  .fa-bars {
+  .fa .fa-bars {
     display: flex;
   }
 
