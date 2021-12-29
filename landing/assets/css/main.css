@@ -58,6 +58,7 @@ body {
         border-radius: 55px;
         position: relative;
         margin: auto;
+        transition: 0.3s;
     }
 
     .content {
@@ -133,8 +134,9 @@ body {
             flex-direction: row;*/
           }
               .left-flex img {
-                height: 500px;
-
+                max-width: 100%;
+                width: 700px;
+                height: auto;
               }
 
           .right-flex {
@@ -157,18 +159,32 @@ body {
                     padding: 10px 0;
                   }
 
+              .social-media a {
+                display: inline-flex;
+                padding: 40px 0 0;
+                margin-right: 20px;
+                color: var(--black-color);
+                transition: 0.3s;
+              }
+                  .social-media a:hover {
+                    color: var(--medium-pink);
+                  }
+
+              .social-media i {
+                margin-right: 10px;
+              }
+
+              .social-media p {
+                display: flex;
+                align-items: center;
+                font-size: 1.4em;
+                font-weight: 700;
+              }
+
           /* FOOTER */
-          footer {
+          .footer {
             margin: 20px 0 0;
-            position: absolute;
           }
-
-@media screen and (max-width: 1970px) {
-
-  .container {
-    background: var(--white-color);
-  }
-}
 
 @media screen and (max-width: 1260px) {
   .container {
@@ -189,13 +205,78 @@ body {
   .fa-bars {
     display: flex;
   }
+
+  /*footer {
+    position: absolute;
+  }*/
 }
 
-@media screen and (max-width: 1072px) {
+@media screen and (max-width: 1024px) {
   .container {
-    min-height: 1000px;
+    height: 82vh;
   }
   .flex-container {
     flex-direction: column;
   }
+
+  .footer {
+   position: absolute;
+   bottom: 30px;
+   left: 0;
+   width: 100%;
+  }
+
+  .left-flex img {
+    width: 400px;
+  }
 }
+
+/*@media screen and (max-width: 1143px) {
+  .container {
+    height: 30vh;
+  }
+}
+      @media screen and (max-height: 320px), screen and (max-width: 1143px) {
+        .container {
+          height: 30vh;
+        }
+      }*/
+
+@media screen and (max-width: 952px) {
+  .container {
+    height: 88vh;
+  }
+}
+
+@media screen and (max-height: 860px) {
+  .container {
+    height: 90vh;
+  }
+}
+  @media screen and (max-width: 768px) {
+  .container {
+    height: 75vh;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .front-page-description {
+    font-size: 0.8em;
+  }
+
+  .social-media a {
+    margin: 0;
+    padding: 25px 0 0;
+  }
+  .social-media p {
+    display: none;
+  }
+}
+
+/*@media screen and (max-width: 512px) {
+  .container {
+    height: 70vh;
+  }
+}*/
