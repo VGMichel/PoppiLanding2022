@@ -81,9 +81,9 @@ body {
                     display: inline;
                     margin: 0 10px;
                 }
-            .fa, .fa-bars {
-              display: none;
-            }
+                .main-nav i {
+                  display: none;
+                }
             .nav-items {
               text-align: right;
             }
@@ -198,12 +198,12 @@ body {
     justify-content: center;
   }
 
-  .nav-items {
-    display: none;
+  .main-nav i {
+    display: flex;
   }
 
-  .fa .fa-bars {
-    display: flex;
+  .nav-items {
+    display: none;
   }
 
   /*footer {
